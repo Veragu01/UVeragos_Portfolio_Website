@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom CSS -->
     <link rel="stylesheet" href="./styles.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Top Nav Bar -->
-    <nav class="navbar sticky-top navbar-light  vw-100" style="background-color: #b3b3b3;">
+    <nav id="navbar" class="navbar sticky-top navbar-dark  vw-100" style="background-color: black;">
         <div class="container-fluid justify-content-start" >
             <p id="navName" class="navbar-brand mb-0 h4 gap- pe-5"><strong>Ulysses.V</strong></p>
             <a class="navbar-brand mb-0 h4 gap-5 nav-link active pe-2" href="#">Home</a>
@@ -21,27 +23,27 @@
 </head>
 
 <body>
-    <main class="min-vh-100 d-flex flex-column">
-        <section id="Greeting_Section" class="m-3 p-5">
-            <h1>
-                Hi, I'm Ulysses Veragos
+    <main class="">
+        <p></p>
+        <section id="Greeting_Section" class="" >
+            <h1 >
+                Hi, 
+                <br>
+                I'm Ulysses
             </h1>
-            <!-- <img src="" class="rounded float-right" alt="..."> -->
-            <div class="text-center ms-5">
-                <img src="..." class="rounded" alt="..">
-            </div>
-            <aside><h3 class="ms-2">sjohdv</h3></aside>
-            
+            <h3 id="role">Undergraduate Computer Science Student</h3>
+            <img id="profilePicture" src="./assets/profilePicture_temp.png">
+
             
             
             
         </section>
-
-        <section id="About_Section" class="m-3 p-5" style="background-color: #b3b3b3;">
+        <div id="break"></div>
+        <section id="About_Section" class="p-5">
             <h1>
                 About
             </h1>
-            <p class="mt-3 ms-2">
+            <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nisi nunc. 
                 Nullam rutrum neque odio, vel interdum urna tristique ac. Etiam venenatis imperdiet euismod. 
                 Nulla libero eros, sodales eget euismod rutrum, consequat eu arcu. Vestibulum posuere metus et leo consequat lobortis. 
@@ -52,17 +54,78 @@
                 Vivamus aliquet eget ligula sed aliquet. Aliquam erat volutpat.
             </p>
         </section>
-
-        <section id="Projects_Section" class="m-3 p-5" style="background-color: #b3b3b3;">
+        <div id="break"></div>
+        <section id="Projects_Section" >
             <h1>
                 Projects
             </h1>
+            <section id="Drone">
+                <div style="display: inline-block; vertical-align: top;" >
+                    <img id="drone_Image" src="./assets/profilePicture_temp.png">
+                    
+                </div>
+                <div style="display: inline-block; vertical-align: top;">
+                    <h2>
+                        Project Title
+                    </h2>
+                    <p>
+                        project summary
+                        <br>
+                        <br>
+                        <br>
+                        Status: Work in progress
+                    </p>
+                </div>
+            </section>
+            <section id="project2">
+                <div style="display: inline-block; vertical-align: top;" >
+                    <img id="drone_Image" src="./assets/profilePicture_temp.png">
+                    
+                </div>
+                <div style="display: inline-block; vertical-align: top;">
+                    <h2>
+                        Project Title
+                    </h2>
+                    <p>
+                        project summary
+                        <br>
+                        <br>
+                        <br>
+                        Status: Work in progress
+                    </p>
+                </div>
+            </section>
+            <section id="project3">
+                <div style="display: inline-block; vertical-align: top;" >
+                    <img id="drone_Image" src="./assets/profilePicture_temp.png">
+                    
+                </div>
+                <div style="display: inline-block; vertical-align: top;">
+                    <h2>
+                        Project Title
+                    </h2>
+                    <p>
+                        project summary
+                        <br>
+                        <br>
+                        <br>
+                        Status: Work in progress
+                    </p>
+                </div>
+            </section>
         </section>
-
-        <section id="Contact_Section" class="m-3 p-5" style="background-color: #b3b3b3;">
-            <h1>
-                Contact
+        <div id="break"></div>
+        <section id="Contact_Section" class="p-5">
+            <h1 id="contact_Heading">
+                Get In Touch
             </h1>
+            <p id="contact_Paragragh">
+                Phone:  0274-396-306
+                <br>
+                Email:  <a href="mailto:ulyveragos@gmail.com">ulyveragos@gmail.com</a>
+                <br>
+                Github: <a href="https://github.com/Veragu01">github.com/Veragu01</a>
+            </p>
         </section>
     </main>
     
