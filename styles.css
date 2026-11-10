@@ -1,17 +1,50 @@
-.h1 {
-    font-style: normal;
+h1 {
+    /*font-style: normal;*/
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Droid Sans Mono', monospace;
+    /*font-family: 'Droid Sans Mono', monospace;*/
+    font-family: "Georgia", serif;
     font-weight: bold;
     margin: 10px;
-    
 }
-.h3 {
-    margin: 500px;
+h2 {
+    font-style: normal;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /*font-family: 'Droid Sans Mono', monospace;*/
+    font-family: "Giest", sans-serif;
+    /*font-weight: bold;*/
+    margin: 10px;
+}
+h3 {
+    /*margin: 500px;*/
+    font-style: normal;
+    /*font-family: "Giest", sans-serif;*/
+    font-family: "Georgia", serif;
+    margin: 10px
+}
+p {
+    font-style: normal;
+    font-family: "Georgia", serif;
+    margin: 10px
+
 }
 
-.a {
-        color: rgb(245, 245, 233);  /* navbar text color*/
+a {
+    font-style: normal;
+    font-family: "Georgia", serif;
+    color: rgb(0 0 0);  /* navbar text color*/
+}
+
+.navButton {
+    font-style: normal;
+    font-family: "Georgia", serif;
+    font-size: large;
+    color: rgb(255 255 255);  /* navbar text color*/
+}
+.navButton:hover {
+    color: rgb(158 158 158);  /* navbar text color*/
+}
+.navButton:focus {
+    color: rgb(255 255 255);
 }
 
 
@@ -24,12 +57,13 @@ main {
 }
 
 body {
-    background-color: #4b4b4b; 
-    color: rgb(245, 245, 233); /* body text color*/
+
+    background-color: #fff7e0;
+    color: rgb(0 0 0); /* body text color*/
 }
 
 section {
-    padding: 50px;
+    padding: 20px;
     /* border-radius: 20px; */
     width:auto;
     position: relative;
@@ -38,25 +72,69 @@ section {
     margin-right: 10px; */
     margin-left: 5%;
     margin-right: 5%;
-    font-family: 'Droid Sans Mono', monospace;
+    outline-color: black;
+    /*font-family: "Georgia", serif;*/
+    outline-width: 1px;
 
 }
 
+#Greeting_Section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 
+.greeting-text {
+    flex: 1;
+}
 #profilePicture {
-    position:relative;
-    top: -100px;
-    right: -60%;
+    /*position:relative;*/
+    /*margin-top: -480px;*/
+    margin-right: 50px;
     width: 500px;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
-#role {
-    margin-top: 400px;
-    margin-bottom: -400px;
+
+#title_section {
+    margin-top: 50px;
 }
 
-#break {
+.blackButton {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-style: normal;
+    font-family: "Giest", sans-serif;
+    margin: 10px;
+}
+.blackButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.whiteButton {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-style: normal;
+    font-family: "Giest", sans-serif;
+    margin: 10px;
+    transition-duration: 0.4s;
+}
+.whiteButton:hover {
+    background-color: black;
+    color: white;
+}
+
+
+#about_Me {
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-right: 50%;
+}
+
+.break {
     background-color: lightgrey;
     max-width: 90%;
     margin-left: auto;
@@ -65,21 +143,39 @@ section {
 }
 
 #navbar {
-    font-family: 'Droid Sans Mono', monospace;
+    font-family: "Georgia", serif;
 }
 
-#drone_Image {
-    position:relative;
+.projectCard {
+    outline-style: solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.projectCard:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.projectText {
+    margin-left: 40px;
+    margin-bottom: auto;
+    flex: 1;
+}
+
+.projectImage {
+    /*position:relative;*/
     /* top: -100px;
     right: -60%; */
     width: 400px;
     border-radius: 20px;
 }
 
-#projectText {
-    margin-left: 40px;
-}
 
-#contact_Heading {
+
+
+.contact_Heading {
     margin-bottom: 50px;
 }

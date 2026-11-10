@@ -13,125 +13,132 @@
     <!-- Top Nav Bar -->
     <nav id="navbar" class="navbar sticky-top navbar-dark  vw-100" style="background-color: black;">
         <div class="container-fluid justify-content-start" >
-            <p id="navName" class="navbar-brand mb-0 h4 gap- pe-5"><strong>Ulysses.V</strong></p>
-            <a class="navbar-brand mb-0 h4 gap-5 nav-link active pe-2" href="#">Home</a>
-            <a class="navbar-brand mb-0 h4 gap-5 nav-link active pe-2" href="#">About</a>
-            <a class="navbar-brand mb-0 h4 gap-5 nav-link active pe-2" href="#">Projects</a>
-            <a class="navbar-brand mb-0 h4 gap-5 nav-link active" href="#">Contacts</a>
+            <p id="navName" class="navbar-brand mb-0 h4"><strong>Ulysses.V</strong></p>
+            <div class="d-flex  align-items-center gap-4 ms-auto">
+                <a class="nav-link  navButton" href="/index.html">Home</a>
+                <a class="nav-link  navButton" href="">About</a>
+                <a class="nav-link active navButton" href="/projects.html">Projects</a>
+                <a class="nav-link active navButton" href="#">Contact</a>
+            </div>
         </div>
     </nav>
 </head>
 
 <body>
-    <main class="">
+    <main id="title_section" class="">
         <p></p>
-        <section id="Greeting_Section" class="" >
+        <section>
             <h1 >
-                Hello, 
-                <br>
-                I'm Uly
+                PORTFOLIO
             </h1>
-            <h3 id="role">Undergraduate Computer Science Student</h3>
+        </section>
+        <div class="break"></div>
+        <section id="Greeting_Section" class="" >
+            <div class="greetingText">
+                <h1 >
+                    ULYSSES VERAGOS
+                </h1>
+                <h3>Undergraduate Computer Science Student</h3>
+                <p id="about_Me">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nisi nunc.
+                    Nullam rutrum neque odio, vel interdum urna tristique ac. Etiam venenatis imperdiet euismod.
+                    Nulla libero eros, sodales eget euismod rutrum, consequat eu arcu. Vestibulum posuere metus et leo consequat lobortis.
+                    Duis id sem luctus, facilisis elit et, sagittis ligula. Fusce elit leo, dapibus ut nisl ut, imperdiet condimentum velit.
+                </p>
+                <div>
+                    <a href="#"> <button class="blackButton">View My Projects →</button></a>
+                    <a href="#"> <button class="whiteButton">Contact Me</button></a>
+                </div>
+            </div>
             <img id="profilePicture" src="./assets/profilePicture_temp.png">
+        </section>
 
-            
-            
-            
-        </section>
-        <div id="break"></div>
-        <section id="About_Section" class="p-5">
-            <h1>
-                About
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nisi nunc. 
-                Nullam rutrum neque odio, vel interdum urna tristique ac. Etiam venenatis imperdiet euismod. 
-                Nulla libero eros, sodales eget euismod rutrum, consequat eu arcu. Vestibulum posuere metus et leo consequat lobortis. 
-                Duis id sem luctus, facilisis elit et, sagittis ligula. Fusce elit leo, dapibus ut nisl ut, imperdiet condimentum velit. 
-                Integer at quam ut urna viverra dapibus id pretium ex. Integer molestie dictum scelerisque. 
-                Cras eget rhoncus turpis, ut mollis lectus. Nulla gravida dolor quis nibh semper rutrum. 
-                Vestibulum lobortis, mi non pulvinar tristique, ipsum augue ullamcorper nisl, a accumsan lectus urna eget risus. 
-                Vivamus aliquet eget ligula sed aliquet. Aliquam erat volutpat.
-            </p>
-        </section>
-        <div id="break"></div>
-        <section id="Projects_Section" >
+
+        <div class="break"></div>
+        <section id="Projects_Section"  >
             <h1>
                 Projects
             </h1>
-            <section id="project">
-                <div style="display: inline-block; vertical-align: top;" >
-                    <img id="drone_Image" src="./assets/profilePicture_temp.png">
+            <section id="project1" class="projectCard">
+                <div>
+                    <img class="projectImage" src="./assets/profilePicture_temp.png">
                     
                 </div>
-                <div id="projectText" style="display: inline-block; vertical-align: top;">
+                <div id="" class="projectText">
                     <h2>
-                        Project Title
+                        Scratch Coding Workshops
                     </h2>
-                    <p>
-                        project summary
+                    <p >
+                        About every four weeks, a friend and I run a coding workshop at New Lynn Library, where we teach kids aged 8 and up to create games in Scratch.
+                        Scratch introduces programming through a simple, hands-on approach where kids connect 'blocks' of code to build small games reminiscent of 2010s Flash games.
+                        We’ve run a handful of workshops so far and plan to continue, with the hope of expanding to other libraries around Auckland.
                         <br>
                         <br>
-                        <br>
-                        Status: Work in progress
+                        Status: Ongoing
                     </p>
                 </div>
             </section>
-            <section id="project">
-                <div style="display: inline-block; vertical-align: top;" >
-                    <img id="drone_Image" src="./assets/profilePicture_temp.png">
-                    
+            <section id="project2" class="projectCard">
+                <div>
+                    <img class="projectImage" src="./assets/profilePicture_temp.png">
+
                 </div>
-                <div id="projectText" style="display: inline-block; vertical-align: top;">
+                <div id="" class="projectText">
                     <h2>
-                        Project Title
+                        Radio-Controlled Aircraft
                     </h2>
-                    <p>
-                        project summary
+                    <p >
+                        I’m designing, programming, and building a remote-controlled plane from scratch with a collaborator who studies Aerospace Engineering.
+                        Our goal is to create a plane with a one-metre wingspan, controlled with an Xbox controller over RF communication.
+                        The system uses two ESP32s: one in the controller to send inputs, and another on the plane as its “brain.”
+<!--                        Before starting this project, I had no experience with Arduinos or electronics and knew very little about aircraft design.-->
+<!--                        My role is to design the systems for both ESP32s, write the code they need to operate, and bring a programmer’s perspective to the project.-->
+<!--                        The project is still in its early stages, but we’re close to getting the boards communicating over RF.-->
                         <br>
                         <br>
-                        <br>
-                        Status: Work in progress
+                        Status: Ongoing
                     </p>
                 </div>
             </section>
-            <section id="project">
-                <div style="display: inline-block; vertical-align: top;" >
-                    <img id="drone_Image" src="./assets/profilePicture_temp.png">
-                    
+            <section id="project3" class="projectCard">
+                <div>
+                    <img class="projectImage" src="./assets/profilePicture_temp.png">
+
                 </div>
-                <div id="projectText" style="display: inline-block; vertical-align: top;">
+                <div id="" class="projectText">
                     <h2>
-                        Project Title
+                        Scratch Coding Workshops
                     </h2>
-                    <p>
-                        project summary
+                    <p >
+                        About every four weeks, a friend and I run a coding workshop at New Lynn Library, where we teach kids aged 8 and up to create games in Scratch.
+                        Scratch introduces programming through a simple, hands-on approach where kids connect 'blocks' of code to build small games reminiscent of 2010s Flash games.
+                        We’ve run a handful of workshops so far and plan to continue, with the hope of expanding to other libraries around Auckland.
                         <br>
                         <br>
-                        <br>
-                        Status: Work in progress
+                        Status: Ongoing
                     </p>
                 </div>
             </section>
+
         </section>
 
-        <div id="break"></div>
+        <div class="break"></div>
         
         <section id="Contact_Section" class="p-5">
-            <h1 id="contact_Heading">
+            <h1 class="contact_Heading">
                 Get In Touch
             </h1>
-            <p id="contact_Paragragh">
-                Phone:&nbsp;&nbsp;&nbsp;0274-396-306
+            <p class="contact_Paragragh">
+                Phone:&nbsp;&nbsp;&nbsp;0274 396 306
             </p>
-            <p id="contact_Paragragh">
+            <p class="contact_Paragragh">
                 Email:&nbsp;&nbsp;&nbsp;<a href="mailto:ulyveragos@gmail.com">ulyveragos@gmail.com</a>
             </p>
-            <p id="contact_Paragragh">
+            <p class="contact_Paragragh">
                 Github:&nbsp;&nbsp;<a href="https://github.com/Veragu01">github.com/Veragu01</a>
             </p>
-            <p id="contact_Paragragh">
-                Resume:&nbsp;&nbsp;<a href="">Download here</a>
+            <p class="contact_Paragragh">
+                Resume:&nbsp;&nbsp;<a href="">View here</a>
             </p>
         </section>
     </main>
