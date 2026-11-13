@@ -15,10 +15,10 @@
         <div class="container-fluid justify-content-start" >
             <p id="navName" class="navbar-brand mb-0 h4"><strong>Ulysses.V</strong></p>
             <div class="d-flex  align-items-center gap-4 ms-auto">
-                <a class="nav-link  navButton" href="/index.html">Home</a>
-                <a class="nav-link  navButton" href="">About</a>
-                <a class="nav-link active navButton" href="/projects.html">Projects</a>
-                <a class="nav-link active navButton" href="#">Contact</a>
+                <a class="nav-link  navButton" href="./">Home</a>
+                <a class="nav-link  navButton" href="./about.html">About</a>
+                <a class="nav-link active navButton" href="./projects.html">Projects</a>
+<!--                <a class="nav-link active navButton" href="./contact.html">Contact</a>-->
             </div>
         </div>
     </nav>
@@ -39,15 +39,15 @@
                     ULYSSES VERAGOS
                 </h1>
                 <h3>Undergraduate Computer Science Student</h3>
-                <p id="about_Me">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nisi nunc.
-                    Nullam rutrum neque odio, vel interdum urna tristique ac. Etiam venenatis imperdiet euismod.
-                    Nulla libero eros, sodales eget euismod rutrum, consequat eu arcu. Vestibulum posuere metus et leo consequat lobortis.
-                    Duis id sem luctus, facilisis elit et, sagittis ligula. Fusce elit leo, dapibus ut nisl ut, imperdiet condimentum velit.
+                <p id="about_Me" class="greeting-text">
+                    I am a student in my final year of studying Computer Science at Unitec.
+                    On this website you'll find contact info, my resume, and some personal projects I've either finished or are working on right now.
+                    This site acts as a blog of sorts where I talk about my projects in some detail, and showcase the proccess I used to make them.
+
                 </p>
                 <div>
-                    <a href="#"> <button class="blackButton">View My Projects →</button></a>
-                    <a href="#"> <button class="whiteButton">Contact Me</button></a>
+                    <a href="./projects.html"> <button class="blackButton">View My Projects →</button></a>
+                    <a href="./about.html"> <button class="whiteButton">Contact Me</button></a>
                 </div>
             </div>
             <img id="profilePicture" src="./assets/profilePicture_temp.png">
@@ -61,7 +61,7 @@
             </h1>
             <section id="project1" class="projectCard">
                 <div>
-                    <img class="projectImage" src="./assets/profilePicture_temp.png">
+                    <img class="projectImage" src="./assets/FlyingHippoGame.png">
                     
                 </div>
                 <div id="" class="projectText">
@@ -69,9 +69,9 @@
                         Scratch Coding Workshops
                     </h2>
                     <p >
-                        About every four weeks, a friend and I run a coding workshop at New Lynn Library, where we teach kids aged 8 and up to create games in Scratch.
-                        Scratch introduces programming through a simple, hands-on approach where kids connect 'blocks' of code to build small games reminiscent of 2010s Flash games.
-                        We’ve run a handful of workshops so far and plan to continue, with the hope of expanding to other libraries around Auckland.
+                        Once a month I run a coding workshop at New Lynn Library, where we teach kids aged 8 and up to create games in Scratch.
+                        Scratch introduces programming through a simple, hands on approach where kids connect 'blocks' of code to build small games reminiscent of 2010s Flash games.
+                        I’ve run a handful of workshops so far and plan to continue, with the hope of expanding to other libraries around Auckland.
                         <br>
                         <br>
                         Status: Ongoing
@@ -80,7 +80,7 @@
             </section>
             <section id="project2" class="projectCard">
                 <div>
-                    <img class="projectImage" src="./assets/profilePicture_temp.png">
+                    <img class="projectImage" src="./assets/Wiring%20Diagram.png">
 
                 </div>
                 <div id="" class="projectText">
@@ -102,17 +102,20 @@
             </section>
             <section id="project3" class="projectCard">
                 <div>
-                    <img class="projectImage" src="./assets/profilePicture_temp.png">
+                    <img class="projectImage" src="./assets/websiteFigmaDesignCropped.png">
 
                 </div>
                 <div id="" class="projectText">
                     <h2>
-                        Scratch Coding Workshops
+                        Portfolio Website
                     </h2>
                     <p >
-                        About every four weeks, a friend and I run a coding workshop at New Lynn Library, where we teach kids aged 8 and up to create games in Scratch.
-                        Scratch introduces programming through a simple, hands-on approach where kids connect 'blocks' of code to build small games reminiscent of 2010s Flash games.
-                        We’ve run a handful of workshops so far and plan to continue, with the hope of expanding to other libraries around Auckland.
+                        This website is a static site developed with HTML and CSS (including bootstrap). The initial design was developed in figma before being developed in pycharm and deployed through GitHub Pages.
+                        In the future I would like to redevelop it using ReactJS as it's modularity appeals to me and I think it would work well with this site.
+                        I developed this website primarily because I wanted a space where I could showcase projects of mine to prospective employers. However, it will also act as a sort of blog for me, a place where I can keep track of my past and present projects.
+                        <!--                        Before starting this project, I had no experience with Arduinos or electronics and knew very little about aircraft design.-->
+<!--                        My role is to design the systems for both ESP32s, write the code they need to operate, and bring a programmer’s perspective to the project.-->
+<!--                        The project is still in its early stages, but we’re close to getting the boards communicating over RF.-->
                         <br>
                         <br>
                         Status: Ongoing
@@ -138,11 +141,26 @@
                 Github:&nbsp;&nbsp;<a href="https://github.com/Veragu01">github.com/Veragu01</a>
             </p>
             <p class="contact_Paragragh">
-                Resume:&nbsp;&nbsp;<a href="">View here</a>
+                Resume:&nbsp;&nbsp;<a href="./assets/CV%20-%20Uly%20Veragos.pdf">Open PDF</a>
             </p>
         </section>
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+                const ProjectCard1 = document.getElementById('project1');
+                const ProjectCard2 = document.getElementById('project2');
+                const ProjectCard3 = document.getElementById('project3');
+
+                ProjectCard1.addEventListener('click', () => {
+                    window.alert("This Project does not have a dedicated page yet. Coming soon!")
+                })
+                ProjectCard2.addEventListener('click', () => {
+                    window.alert("This Project does not have a dedicated page yet. Coming soon!")
+                })
+                ProjectCard3.addEventListener('click', () => {
+                    window.alert("This Project does not have a dedicated page yet. Coming soon!")
+                })
+    </script>
 </body>
 </html>
